@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ansh Pandey | Data Analyst Portfolio</title>
+    <meta name="description" content="Portfolio of Ansh Pandey, Data Analyst skilled in Python, SQL, Power BI and Excel.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <nav class="navbar">
+        <h2 class="logo">Ansh</h2>
+
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero scroll-animate">
+    <div class="hero-container">
+        <div class="hero-text">
+            <h1>Hi, I'm <span>Ansh Pandey</span></h1>
+            <h2>I am a <span class="typing"></span></h2>
+            <p>I transform raw data into meaningful insights using Python, SQL, Power BI and Excel to drive business decisions.</p>
+
+            <div class="hero-btns">
+                <a href="#projects" class="btn">View Projects</a>
+            </div>
+
+            <div class="social-icons">
+                <a href="https://github.com/theanshpandeyy" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ansh-pandey-a30119357/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/theanshpandeyy" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/918127264069" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="profile.jpeg" alt="Profile Image">
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section about scroll-animate">
+    <div class="about-container">
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>I am a <strong>Data Analyst</strong> who transforms raw data into meaningful business insights. I specialize in data cleaning, exploratory data analysis, dashboard development and data storytelling.</p>
+            <p>My goal is to build scalable data solutions and help organizations make data-driven decisions using Python, SQL, Power BI and Excel.</p>
+            <a href="#contact" class="about-btn">Let's Connect</a>
+        </div>
+
+        <div class="about-stats">
+            <div class="stat-card">
+                <h3>3+</h3>
+                <p>Projects Completed</p>
+            </div>
+            <div class="stat-card">
+                <h3>8+</h3>
+                <p>Technical Skills</p>
+            </div>
+            <div class="stat-card">
+                <h3>100%</h3>
+                <p>Dedication</p>
+            </div>
+            <div class="stat-card">
+                <h3>Data Analyst</h3>
+                <p>Open to Opportunities</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section skills scroll-animate">
+    <canvas id="skillsBgCanvas" class="skills-bg-canvas"></canvas>
+    <div class="skill-orb skill-orb-1"></div>
+    <div class="skill-orb skill-orb-2"></div>
+    <div class="skill-orb skill-orb-3"></div>
+
+    <div class="skills-header">
+        <span class="skills-eyebrow">Expertise</span>
+        <h2>Technical <span class="skills-title-accent">Skills</span></h2>
+        <p class="skills-subtitle">Tools &amp; technologies I work with</p>
+    </div>
+
+    <div class="skills-container">
+
+        <!-- Python -->
+        <div class="skill-card" data-skill-tilt>
+            <div class="skill-card-inner">
+                <div class="skill-card-shine"></div>
+                <div class="skill-card-glow"></div>
+                <span class="skill-badge">Advanced</span>
+                <div class="circle-wrap">
+                    <svg class="circle-svg" viewBox="0 0 120 120">
+                        <circle class="circle-track" cx="60" cy="60" r="52"/>
+                        <circle class="circle-fill" cx="60" cy="60" r="52" data-value="90" style="--stroke-color:#3b82f6;"/>
+                    </svg>
+                    <div class="circle-center">
+                        <div class="skill-icon-wrap skill-icon-blue">
+                            <svg viewBox="0 0 128 128" class="skill-svg"><path fill="#3776ab" d="M63.391 1.988c-4.222.02-8.252.379-11.8 1.007-10.45 1.846-12.346 5.71-12.346 12.837v9.411h24.693v3.137H29.977c-7.176 0-13.46 4.313-15.426 12.521-2.268 9.405-2.368 15.275 0 25.096 1.755 7.311 5.947 12.519 13.124 12.519h8.491V67.234c0-8.151 7.051-15.34 15.426-15.34h24.665c6.866 0 12.346-5.654 12.346-12.548V15.833c0-6.693-5.646-11.72-12.346-12.837-4.244-.706-8.645-1.027-12.866-1.008zM50.037 9.557c2.55 0 4.634 2.117 4.634 4.721 0 2.593-2.083 4.69-4.634 4.69-2.56 0-4.633-2.097-4.633-4.69 0-2.604 2.073-4.721 4.633-4.721z"/><path fill="#ffd43b" d="M91.682 28.38v10.966c0 8.5-7.208 15.655-15.426 15.655H51.591c-6.756 0-12.346 5.783-12.346 12.549v23.515c0 6.691 5.818 10.628 12.346 12.547 7.816 2.297 15.312 2.713 24.665 0 6.216-1.801 12.346-5.423 12.346-12.547v-9.412H63.938v-3.138h37.012c7.176 0 9.852-5.005 12.348-12.519 2.578-7.735 2.467-15.174 0-25.096-1.774-7.145-5.161-12.521-12.348-12.521h-9.268zM77.809 87.927c2.561 0 4.634 2.097 4.634 4.692 0 2.602-2.074 4.719-4.634 4.719-2.55 0-4.633-2.117-4.633-4.719 0-2.595 2.083-4.692 4.633-4.692z"/></svg>
+                        </div>
+                        <span class="circle-percent" data-target="90">0%</span>
+                    </div>
+                </div>
+                <h3 class="skill-name">Python</h3>
+                <p class="skill-desc">Data manipulation, EDA &amp; automation</p>
+            </div>
+        </div>
+
+        <!-- SQL -->
+        <div class="skill-card" data-skill-tilt>
+            <div class="skill-card-inner">
+                <div class="skill-card-shine"></div>
+                <div class="skill-card-glow"></div>
+                <span class="skill-badge skill-badge-pro">Proficient</span>
+                <div class="circle-wrap">
+                    <svg class="circle-svg" viewBox="0 0 120 120">
+                        <circle class="circle-track" cx="60" cy="60" r="52"/>
+                        <circle class="circle-fill" cx="60" cy="60" r="52" data-value="85" style="--stroke-color:#f59e0b;"/>
+                    </svg>
+                    <div class="circle-center">
+                        <div class="skill-icon-wrap skill-icon-orange">
+                            <svg viewBox="0 0 128 128" class="skill-svg"><path fill="#f29111" d="M64 0C28.7 0 0 9 0 20.1v87.7C0 119 28.7 128 64 128s64-9 64-20.2V20.1C128 9 99.3 0 64 0zm0 8c32.8 0 56 8.1 56 12.1S96.8 32.2 64 32.2 8 24.1 8 20.1 31.2 8 64 8zm0 112c-32.8 0-56-8.1-56-12.2V91.5c12.2 6.3 33 10.3 56 10.3s43.8-4 56-10.3v16.3C120 111.9 96.8 120 64 120zm0-26.8c-32.8 0-56-8.1-56-12.2V64.7c12.2 6.3 33 10.3 56 10.3s43.8-4 56-10.3V81C120 85.1 96.8 93.2 64 93.2zm0-26.7c-32.8 0-56-8.1-56-12.2V38c12.2 6.3 33 10.3 56 10.3S107.8 44.3 120 38v16.3C120 58.4 96.8 66.5 64 66.5z"/></svg>
+                        </div>
+                        <span class="circle-percent" data-target="85">0%</span>
+                    </div>
+                </div>
+                <h3 class="skill-name">SQL</h3>
+                <p class="skill-desc">Complex queries, joins &amp; optimization</p>
+            </div>
+        </div>
+
+        <!-- Power BI -->
+        <div class="skill-card" data-skill-tilt>
+            <div class="skill-card-inner">
+                <div class="skill-card-shine"></div>
+                <div class="skill-card-glow"></div>
+                <span class="skill-badge skill-badge-pro">Proficient</span>
+                <div class="circle-wrap">
+                    <svg class="circle-svg" viewBox="0 0 120 120">
+                        <circle class="circle-track" cx="60" cy="60" r="52"/>
+                        <circle class="circle-fill" cx="60" cy="60" r="52" data-value="80" style="--stroke-color:#eab308;"/>
+                    </svg>
+                    <div class="circle-center">
+                        <div class="skill-icon-wrap skill-icon-yellow">
+                            <svg viewBox="0 0 128 128" class="skill-svg"><rect x="8" y="72" width="24" height="48" rx="4" fill="#f2c811"/><rect x="40" y="48" width="24" height="72" rx="4" fill="#f2c811" opacity="0.85"/><rect x="72" y="24" width="24" height="96" rx="4" fill="#f2c811" opacity="0.7"/><rect x="104" y="8" width="24" height="112" rx="4" fill="#f2c811" opacity="0.55"/></svg>
+                        </div>
+                        <span class="circle-percent" data-target="80">0%</span>
+                    </div>
+                </div>
+                <h3 class="skill-name">Power BI</h3>
+                <p class="skill-desc">Dashboards, DAX &amp; business intelligence</p>
+            </div>
+        </div>
+
+        <!-- Excel -->
+        <div class="skill-card" data-skill-tilt>
+            <div class="skill-card-inner">
+                <div class="skill-card-shine"></div>
+                <div class="skill-card-glow"></div>
+                <span class="skill-badge skill-badge-expert">Expert</span>
+                <div class="circle-wrap">
+                    <svg class="circle-svg" viewBox="0 0 120 120">
+                        <circle class="circle-track" cx="60" cy="60" r="52"/>
+                        <circle class="circle-fill" cx="60" cy="60" r="52" data-value="95" style="--stroke-color:#22c55e;"/>
+                    </svg>
+                    <div class="circle-center">
+                        <div class="skill-icon-wrap skill-icon-green">
+                            <svg viewBox="0 0 128 128" class="skill-svg"><path fill="#217346" d="M114.3 5H48.7C45 5 42 8 42 11.7v21.1L80.1 44 128 32.8V11.7C128 8 125 5 121.3 5h-7zM42 32.8v30.5l38 9.5 48-9.5V32.8z"/><path fill="#21a366" d="M42 63.3v30.5L80 103l48-9.2V63.3z"/><path fill="#33c481" d="M42 93.8v22.5c0 3.7 3 6.7 6.7 6.7h71.6c3.7 0 6.7-3 6.7-6.7V93.8z"/><path fill="#107c41" d="M69.1 25.7H42v76.6h27.1c3.7 0 6.6-3 6.6-6.6V32.4c0-3.7-3-6.7-6.6-6.7z"/><path fill="#fff" d="M57.2 88.7L45.8 64l11.9-24.3H65l-11.3 24.3L65 88.7z"/><path fill="#fff" d="M64.2 88.7l11.5-24.7-11.5-23.3h7.3l11.5 23.3-11.5 24.7z"/></svg>
+                        </div>
+                        <span class="circle-percent" data-target="95">0%</span>
+                    </div>
+                </div>
+                <h3 class="skill-name">Excel</h3>
+                <p class="skill-desc">Pivot tables, macros &amp; data modeling</p>
+            </div>
+        </div>
+
+        <!-- Pandas -->
+        <div class="skill-card" data-skill-tilt>
+            <div class="skill-card-inner">
+                <div class="skill-card-shine"></div>
+                <div class="skill-card-glow"></div>
+                <span class="skill-badge skill-badge-adv">Advanced</span>
+                <div class="circle-wrap">
+                    <svg class="circle-svg" viewBox="0 0 120 120">
+                        <circle class="circle-track" cx="60" cy="60" r="52"/>
+                        <circle class="circle-fill" cx="60" cy="60" r="52" data-value="90" style="--stroke-color:#a855f7;"/>
+                    </svg>
+                    <div class="circle-center">
+                        <div class="skill-icon-wrap skill-icon-purple">
+                            <svg viewBox="0 0 128 128" class="skill-svg"><rect x="44" y="8" width="16" height="52" rx="8" fill="#130754"/><rect x="68" y="8" width="16" height="52" rx="8" fill="#e70488"/><rect x="44" y="68" width="16" height="52" rx="8" fill="#130754"/><rect x="68" y="68" width="16" height="52" rx="8" fill="#e70488"/><rect x="44" y="50" width="40" height="28" rx="6" fill="#150458" opacity="0.7"/></svg>
+                        </div>
+                        <span class="circle-percent" data-target="90">0%</span>
+                    </div>
+                </div>
+                <h3 class="skill-name">Pandas</h3>
+                <p class="skill-desc">Data wrangling, cleaning &amp; merging</p>
+            </div>
+        </div>
+
+        <!-- Statistics -->
+        <div class="skill-card" data-skill-tilt>
+            <div class="skill-card-inner">
+                <div class="skill-card-shine"></div>
+                <div class="skill-card-glow"></div>
+                <span class="skill-badge skill-badge-pro">Proficient</span>
+                <div class="circle-wrap">
+                    <svg class="circle-svg" viewBox="0 0 120 120">
+                        <circle class="circle-track" cx="60" cy="60" r="52"/>
+                        <circle class="circle-fill" cx="60" cy="60" r="52" data-value="75" style="--stroke-color:#06b6d4;"/>
+                    </svg>
+                    <div class="circle-center">
+                        <div class="skill-icon-wrap skill-icon-cyan">
+                            <svg viewBox="0 0 128 128" class="skill-svg"><circle cx="64" cy="64" r="56" fill="none" stroke="#06b6d4" stroke-width="6"/><path d="M20 90 Q40 30 64 64 Q88 98 108 40" fill="none" stroke="#06b6d4" stroke-width="5" stroke-linecap="round"/><circle cx="64" cy="64" r="6" fill="#06b6d4"/></svg>
+                        </div>
+                        <span class="circle-percent" data-target="75">0%</span>
+                    </div>
+                </div>
+                <h3 class="skill-name">Statistics</h3>
+                <p class="skill-desc">Hypothesis testing &amp; probability</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section projects scroll-animate">
+    <canvas id="projectsBg" class="projects-bg-canvas"></canvas>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <div class="projects-header">
+        <span class="projects-eyebrow">Portfolio</span>
+        <h2>Featured <span class="projects-title-accent">Projects</span></h2>
+        <p class="project-subtitle">Crafted with data, driven by insights</p>
+    </div>
+
+    <div class="projects-container" id="projectsContainer"></div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact section reveal scroll-animate">
+    <h2 class="section-title">Get In Touch</h2>
+
+    <div class="contact-wrapper">
+
+        <div class="contact-info">
+            <h3>Let's Work Together</h3>
+            <p>I'm open to Data Analytics, Dashboard Development and Business Intelligence projects.</p>
+
+            <div class="contact-details">
+                <a href="mailto:pandeyansh7986@gmail.com" class="contact-detail-link">
+                    <i class="fas fa-envelope"></i> pandeyansh7986@gmail.com
+                </a>
+                <a href="tel:+918127264069" class="contact-detail-link">
+                    <i class="fas fa-phone"></i> +91 8127264069
+                </a>
+                <a href="https://wa.me/918127264069" target="_blank" rel="noopener noreferrer" class="contact-detail-link whatsapp-link">
+                    <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                </a>
+                <span class="contact-detail-link no-link">
+                    <i class="fas fa-map-marker-alt"></i> Pune, India
+                </span>
+            </div>
+
+            <div class="contact-social">
+                <a href="https://github.com/theanshpandeyy" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ansh-pandey-a30119357/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/theanshpandeyy" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/918127264069" target="_blank" rel="noopener noreferrer" title="WhatsApp" class="whatsapp-social"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+
+        <div class="contact-form-card">
+            <form>
+                <div class="input-group">
+                    <input type="text" required>
+                    <label>Your Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" required>
+                    <label>Your Email</label>
+                </div>
+                <div class="input-group">
+                    <textarea rows="4" required></textarea>
+                    <label>Your Message</label>
+                </div>
+                <button type="submit" class="contact-btn">Send Message</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-inner">
+
+        <div class="footer-left">
+            <span class="footer-name">Ansh Pandey</span>
+            <span class="footer-role">Data Analyst &amp; AI/ML Enthusiast</span>
+        </div>
+
+        <div class="footer-center">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-right">
+            <a href="https://github.com/theanshpandeyy" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/ansh-pandey-a30119357/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/theanshpandeyy" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/918127264069" target="_blank" rel="noopener noreferrer" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom-bar">
+        <p>&copy; 2026 Ansh Pandey &mdash; All Rights Reserved</p>
+        <a href="#home" class="back-top"><i class="fas fa-arrow-up"></i> Back to Top</a>
+    </div>
+</footer>
+
+<script src="projects.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
