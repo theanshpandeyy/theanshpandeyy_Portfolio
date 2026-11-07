@@ -621,16 +621,56 @@ document.addEventListener("DOMContentLoaded", function () {
                     form.reportValidity();
                     return;
                 }
-                form.reset();
-                if (button) {
-                    button.textContent = "Message Sent!";
+
+                function showStatus(text, ms) {
+                    if (!button) return;
+                    button.textContent = text;
                     button.disabled = true;
                     clearTimeout(resetTimer);
                     resetTimer = setTimeout(function () {
                         button.textContent = originalLabel;
                         button.disabled = false;
-                    }, 2500);
+                    }, ms);
                 }
+
+                if (button) {
+                    button.textContent = "Sending...";
+                    button.disabled = true;
+                }
+
+                // Real send: Web3Forms delivers this to your email inbox instantly
+                var keyField = form.querySelector('input[name="access_key"]');
+                if (!keyField || !keyField.value || keyField.value.indexOf("PASTE_") === 0) {
+                    console.error("Web3Forms access key missing: put your key in index.html (name=access_key).");
+                    showStatus("Setup Key Missing", 3500);
+                    return;
+                }
+
+                var controller = new AbortController();
+                var timeoutId = setTimeout(function () { controller.abort(); }, 20000);
+
+                fetch(form.action, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json", "Accept": "application/json" },
+                    body: JSON.stringify(Object.fromEntries(new FormData(form))),
+                    signal: controller.signal
+                })
+                .then(function (res) {
+                    return res.json().catch(function () { return {}; }).then(function (data) {
+                        console.log("Web3Forms response:", res.status, data);
+                        if (res.ok && data.success === true) {
+                            form.reset();
+                            showStatus("Message Sent!", 3000);
+                        } else {
+                            throw new Error(data.message || ("HTTP " + res.status));
+                        }
+                    });
+                })
+                .catch(function (err) {
+                    console.error("Contact form error:", err);
+                    showStatus("Failed - Try Again", 3500);
+                })
+                .finally(function () { clearTimeout(timeoutId); });
             });
         }
     })();
